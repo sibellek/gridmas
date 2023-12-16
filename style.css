@@ -167,7 +167,7 @@ label {
   border-radius: 10px;
 }
 
-  .door div {
+  .door div, .door a {
     position: absolute;
     height: 100%;
     width: 100%;
