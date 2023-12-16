@@ -1,0 +1,258 @@
+body{background: #203549;}
+
+#contenedor {
+  width: 560px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  height: 300px;
+  justify-content: space-between;
+}
+
+.note {
+  width: 60px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.note:nth-child(1) {
+    background: #02B65E;
+    height: 300px;
+}
+
+.note:nth-child(2) {
+    background: #F0D20E;
+    height: 280px;
+}
+
+.note:nth-child(3) {
+    background: #D04559;
+    height: 260px;
+}
+
+.note:nth-child(4) {
+    background: #E28C12;
+    height: 240px;
+}
+
+.note:nth-child(5) {
+    background: #8E83C8;
+    height: 220px;
+}
+
+.note:nth-child(6) {
+    background: #0285D4;
+    height: 200px;
+}
+
+.note:nth-child(7) {
+    background: #FDC1C0;
+    height: 180px;
+}
+
+.note:nth-child(8) {
+    background: #BE3C22;
+    height: 160px;
+}
+
+.boton {
+  margin: 20px auto;
+  width: 560px;
+  height: 50px;
+  background: #333;
+  cursor: pointer;
+}
+
+.white_bold {
+  font-family: Helvetica, Arial, Sans-Serif;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  user-select: none;
+}
+
+.center {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.boton:hover{
+  box-shadow: 0 10px 12px rgba(255,255,255, .2);
+  
+}
+.boton:focus,.boton:active{
+  box-shadow: 0 10px 12px rgba(255,255,255, .6);
+}
+
+
+
+
+@keyframes hover {
+  0% {
+    transform: translate3d(0, 0, 0);
+    color: #b81313;
+  }
+  50% {
+    transform: translate3d(0, -0.2em, 0);
+    color: #db3e3e;
+  }
+  100% {
+    transform: translate3d(0, 0, 0);
+    color: #b81313;
+  }
+}
+@keyframes pulse {
+  0% {
+    box-shadow: 0px 0px 0.3em rgba(255, 255, 255, 0.8);
+  }
+  50% {
+    box-shadow: 0px 0px 0.3em rgba(255, 255, 255, 0.4);
+  }
+  100% {
+    box-shadow: 0px 0px 0.3em rgba(255, 255, 255, 0.8);
+  }
+}
+/* Styles */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 200%;
+}
+
+.fir {
+  position: absolute;
+  margin: 0 auto;
+  bottom: 0;
+  width: 8em;
+  right: 25%;
+}
+
+.fir__item {
+  margin: 0 auto;
+  width: 0;
+  height: 0;
+  border-left: 2.3em solid transparent;
+  border-right: 2.3em solid transparent;
+  border-bottom: 3em solid #16850c;
+}
+.fir__item:nth-child(2) {
+  margin-top: -1.3em;
+  border-left-width: 3em;
+  border-right-width: 3em;
+  border-bottom-width: 4em;
+}
+.fir__item:nth-child(3) {
+  margin-top: -1.7em;
+  border-left-width: 4em;
+  border-right-width: 4em;
+  border-bottom-width: 5em;
+}
+
+.fir__log {
+  margin: 0 auto;
+  width: 1.3em;
+  height: 1.3em;
+  background: #8c370f;
+  background: linear-gradient(#8c370f, #5c240a);
+}
+
+.orbs {
+  position: absolute;
+  width: 0.6em;
+  height: 0.6em;
+  border-radius: 50%;
+  box-shadow: 0px 0px 0.3em rgba(255, 255, 255, 0.8);
+  animation-name: pulse;
+  animation-iteration-count: infinite;
+  animation-duration: 2.5s;
+}
+.orbs:before, .orbs:after {
+  content: "";
+  display: block;
+  position: absolute;
+  border-radius: 50%;
+  box-shadow: 0px 0px 0.3em rgba(255, 255, 255, 0.8);
+  animation-name: pulse;
+  animation-iteration-count: infinite;
+  animation-duration: 2.5s;
+}
+
+.orbs-1 {
+  top: 1.2em;
+  left: 3.2em;
+  background: #ed0000;
+  background: radial-gradient(circle, #f77373, #ed0000);
+}
+.orbs-1:before {
+  top: 2.4em;
+  left: 1.5em;
+  width: 0.6em;
+  height: 0.6em;
+  background: #ed0000;
+  background: radial-gradient(circle, #f77373, #ed0000);
+}
+.orbs-1:after {
+  top: 0.7em;
+  left: 1em;
+  width: 0.8em;
+  height: 0.8em;
+  background: #e7c400;
+  background: radial-gradient(circle, #fbeea3, #e7c400);
+}
+
+.orbs-2 {
+  top: 3.4em;
+  left: 2.9em;
+  background: #e7c400;
+  background: radial-gradient(circle, #fbeea3, #e7c400);
+}
+.orbs-2:before {
+  top: 2.4em;
+  left: 1.5em;
+  width: 0.6em;
+  height: 0.6em;
+  background: #e7c400;
+  background: radial-gradient(circle, #fbeea3, #e7c400);
+}
+.orbs-2:after {
+  top: 1.2em;
+  left: 0.5em;
+  width: 0.8em;
+  height: 0.8em;
+  background: #ed0000;
+  background: radial-gradient(circle, #f77373, #ed0000);
+}
+
+.orbs-3 {
+  top: 6.4em;
+  left: 2.2em;
+  background: #e7c400;
+  background: radial-gradient(circle, #fbeea3, #e7c400);
+}
+.orbs-3:before {
+  top: 1.4em;
+  left: 3.5em;
+  width: 0.6em;
+  height: 0.6em;
+  background: #e7c400;
+  background: radial-gradient(circle, #fbeea3, #e7c400);
+}
+.orbs-3:after {
+  top: 0.9em;
+  left: 1.4em;
+  width: 0.8em;
+  height: 0.8em;
+  background: #ed0000;
+  background: radial-gradient(circle, #f77373, #ed0000);
+}
+
+.orbs-4 {
+  top: 7.9em;
+  left: 1.7em;
+  background: #ed0000;
+  background: radial-gradient(circle, #f77373, #ed0000);
+}

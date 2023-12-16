@@ -12,6 +12,7 @@ body {
 
 .title img {
   height: auto;
+  width: 100%
 }
 
 /* mobile first grid layout */
