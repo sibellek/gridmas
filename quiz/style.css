@@ -1,0 +1,246 @@
+@import url("https://fonts.googleapis.com/css?family=Lobster");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap");
+body {
+  background-color: #000000;
+  overflow: hidden;
+  color: white;
+}
+
+h1 {
+  font-family: "Lobster", cursive;
+  font-size: 80px;
+  text-align: center;
+  color: white;
+  letter-spacing: 3px;
+}
+
+.drop {
+  position: absolute;
+  top: 0;
+  z-index: 1;
+  border-radius: 100%;
+  background-color: #fff;
+  box-shadow: 0 0 10px #FFF;
+}
+
+.animate {
+  animation: falling 5.5s infinite ease-in;
+}
+
+@keyframes falling {
+  0% {
+    top: -10px;
+  }
+  10% {
+    transform: translateX(-5px);
+  }
+  20% {
+    transform: translateX(5px);
+  }
+  30% {
+    transform: translateX(-5px);
+  }
+  40% {
+    transform: translateX(5px);
+  }
+  60% {
+    transform: translateX(-5px);
+  }
+  70% {
+    transform: translateX(5px);
+  }
+  80% {
+    transform: translateX(-5px);
+  }
+  90% {
+    transform: translateX(5px);
+  }
+  95% {
+    opacity: 1;
+  }
+  100% {
+    top: 95vh;
+    opacity: 0;
+  }
+}
+.line {
+  text-align: center;
+}
+
+.line li {
+  position: relative;
+  margin: 0 15px;
+  list-style: none;
+  padding: 0;
+  display: inline-block;
+  width: 12px;
+  height: 28px;
+  border-radius: 50%;
+  top: 35px;
+  background: #fff;
+}
+.line li:before {
+  content: "";
+  position: absolute;
+  background: #222;
+  width: 10px;
+  height: 9px;
+  border-radius: 3px;
+  top: -4px;
+  left: 1px;
+}
+.line li:after {
+  content: "";
+  top: -14px;
+  left: 9px;
+  position: absolute;
+  width: 52px;
+  height: 19px;
+  border-bottom: solid #222 2px;
+  border-radius: 30%;
+}
+
+.line .red {
+  background-color: #fb4545;
+  animation: lightningRed 1s infinite;
+}
+
+.line .green {
+  background-color: #24D024;
+  animation: lightningGreen 1.5s infinite;
+}
+
+.line .yellow {
+  background-color: #fff952;
+  animation: lightningYellow 2s infinite;
+}
+
+.line .blue {
+  background-color: #0A53DE;
+  animation: lightningBlue 2.5s infinite;
+}
+
+.line .pink {
+  background-color: #f53896;
+  animation: lightningPink 2s infinite;
+}
+
+@keyframes lightningRed {
+  0% {
+    box-shadow: 5px 10px 35px 10px #fb4545;
+  }
+  50% {
+    box-shadow: none;
+  }
+  100% {
+    box-shadow: 5px 10px 35px 10px #fb4545;
+  }
+}
+@keyframes lightningGreen {
+  0% {
+    box-shadow: 5px 0 35px 10px #24D024;
+  }
+  50% {
+    box-shadow: none;
+  }
+  100% {
+    box-shadow: 5px 0 35px 10px #24D024;
+  }
+}
+@keyframes lightningYellow {
+  0% {
+    box-shadow: 5px 0 35px 10px #fff952;
+  }
+  50% {
+    box-shadow: none;
+  }
+  100% {
+    box-shadow: 5px 0 35px 10px #fff952;
+  }
+}
+@keyframes lightningBlue {
+  0% {
+    box-shadow: 5px 0 35px 10px #0A53DE;
+  }
+  50% {
+    box-shadow: none;
+  }
+  100% {
+    box-shadow: 5px 0 35px 10px #0A53DE;
+  }
+}
+@keyframes lightningPink {
+  0% {
+    box-shadow: 5px 0 35px 10px #f53896;
+  }
+  50% {
+    box-shadow: none;
+  }
+  100% {
+    box-shadow: 5px 0 35px 10px #f53896;
+  }
+}
+@media (max-width: 1024px) {
+  .line {
+    padding: 0;
+  }
+
+  li {
+    margin: 0 15px 20px 15px;
+  }
+}
+.rotatingText {
+  align-items: center;
+  display: flex;
+  height: 100vh;
+  text-align: center;
+}
+
+.rotatingText-content {
+  position: relative;
+  width: 100%;
+}
+
+.rotatingText-description {
+  font-family: "Georgia", serif;
+  font-style: italic;
+  font-size: 14px;
+  margin: 0;
+  color: white;
+}
+@media (min-width: 768px) {
+  .rotatingText-description {
+    font-size: 18px;
+  }
+}
+
+
+
+
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 80vh;
+}
+
+.pictures {
+  display: flex;
+  flex-direction: column;
+}
+
+.pictures img, .sentences p, .dropzone img {
+  margin: 10px;
+  width: 250px;
+  cursor: pointer;
+}
+
+.dropzone {
+  width: 250px;
+  height: 200px;
+  border: 2px dashed #ccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

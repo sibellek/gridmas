@@ -13,7 +13,6 @@ $(document).ready(function() {
 });
 
 $('.second-santa').on('click', function() {
-  console.log('clicked')
   var imageURL = './santa.png';
   var imageElement = document.createElement('img');
   imageElement.src = imageURL;
