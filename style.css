@@ -67,7 +67,7 @@ body {
     grid-area: d4;
   }
   .day-19 .back {
-    background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/210284/snowflake-2.svg);
+    background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/210284/gift.svg);
   }
   .day-20 {
     grid-area: d1;
@@ -97,7 +97,7 @@ body {
     grid-area: d9;
   }
   .day-26 .back {
-    background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/210284/gift.svg);
+    background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/210284/snowflake-2.svg);
   }
   .day-27 {
     grid-area: d20;
@@ -109,7 +109,7 @@ body {
     grid-area: d11;
   }
   .day-28 .back {
-    background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/210284/snowman.svg);
+    background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/210284/book.svg);
   }
   .day-29 {
     grid-area: d12;
@@ -133,7 +133,7 @@ body {
     grid-area: d6;
   }
   .day-22 .back {
-    background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/210284/book.svg);
+    background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/210284/snowman.svg);
   }
   .day-24 {
     grid-area: d24;
