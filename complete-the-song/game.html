@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Winter Music Game</title>
+<link rel="stylesheet" href="game.css">
+
+</head>
+<body>
+<div class="header" id="myHeader">  
+  <h1>Christmas song game</h1>
+</div>
+<div style="text-align: center;">
+  <h2>Instructions</h2>
+  <h3>listen to the audio, then type then next word/phrase in the text box and click submit <br>write answers with no capitalization nor punctuation</h3>
+
+
+<h2>have fun ❄☃🎅</h2>
+</div>
+  <hr class="tophr">
+<audio controls>
+  <source src="songs\jinglebells.ogg" type="audio/ogg">
+</audio>
+<script>
+  function checkPassword1() {
+   var password = document.getElementById("songName1");
+   var passwordText = password.value;
+   if(passwordText == "sleigh") {
+    alert("yes");
+    return true;
+    document.getElementById("songName1").value = " "
+   }
+   alert("nope");
+   return false;
+   }
+ </script>
+<input id="songName1"></input>
+ <button onclick="return checkPassword1();">send</button>
+
+ <hr class="hr2">
+<audio controls>
+  <source src="songs\alliwant.ogg" type="audio/ogg">
+</audio>
+<script>
+  function checkPassword2() {
+   var password = document.getElementById("songName2");
+   var passwordText = password.value;
+   if(passwordText == "you") {
+    alert("yes");
+    return true;
+   }
+   alert("nope");
+   return false;
+   }
+ </script>
+<input id="songName2"></input>
+ <button onclick="return checkPassword2();">send</button>
+
+  <hr class="hr2">
+<audio controls>
+  <source src="songs\lastchristmas.ogg" type="audio/ogg">
+</audio>
+<script>
+  function checkPassword3() {
+   var password = document.getElementById("songName3");
+   var passwordText = password.value;
+   if(passwordText == "you gave it away") {
+    alert("yes");
+    return true;
+   }
+   alert("nope");
+   return false;
+   }
+ </script>
+<input id="songName3"></input>
+ <button onclick="return checkPassword3();">send</button>
+
+  <hr class="hr2">
+<audio controls>
+  <source src="songs\underneathtree.ogg" type="audio/ogg">
+</audio>
+<script>
+  function checkPassword4() {
+   var password = document.getElementById("songName4");
+   var passwordText = password.value;
+   if(passwordText == "sing") {
+    alert("yes");
+    return true;
+   }
+   alert("nope");
+   return false;
+   }
+ </script>
+<input id="songName4"></input>
+ <button onclick="return checkPassword4();">send</button>
+
+  <hr class="hr2">
+<audio controls>
+  <source src="songs\marydidyouknow.ogg" type="audio/ogg">
+</audio>
+<script>
+  function checkPassword6() {
+   var password = document.getElementById("songName6");
+   var passwordText = password.value;
+   if(passwordText == "creations") {
+    alert("yes");
+    return true;
+   }
+   alert("nope");
+   return false;
+   }
+ </script>
+<input id="songName6"></input>
+ <button onclick="return checkPassword6();">send</button>
+
+<hr class="hr2">
+<audio controls>
+  <source src="songs\mrgrinch.ogg" type="audio/ogg">
+</audio>
+<script>
+  function checkPassword7() {
+   var password = document.getElementById("songName7");
+   var passwordText = password.value;
+   if(passwordText == "heel") {
+    alert("yes");
+    return true;
+   }
+   alert("nope");
+   return false;
+   }
+ </script>
+<input id="songName7"></input>
+ <button onclick="return checkPassword7();">send</button>
+<hr class="hr2">
+<audio controls>
+  <source src="songs\whitechristmas.ogg" type="audio/ogg">
+</audio>
+<script>
+  function checkPassword9() {
+   var password = document.getElementById("songName9");
+   var passwordText = password.value;
+   if(passwordText == "christmas") {
+    alert("yes");
+    return true;
+   }
+   alert("nope");
+   return false;
+   }
+ </script>
+<input id="songName9"></input>
+ <button onclick="return checkPassword9();">send</button>
+
+<hr class="hr2">
+<audio controls>
+  <source src="songs\whereareyouchristmas.ogg" type="audio/ogg">
+</audio>
+<script>
+  function checkPassword0() {
+   var password = document.getElementById("songName10");
+   var passwordText = password.value;
+   if(passwordText == "you") {
+    alert("yes");
+    return true;
+   }
+   alert("nope");
+   return false;
+   }
+ </script>
+<input id="songName10"></input>
+ <button onclick="return checkPassword0();">send</button>
+
+</body>
+</html>
