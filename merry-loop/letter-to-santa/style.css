@@ -1,0 +1,70 @@
+h1 {
+  text-align: center;
+  margin-top: 200px;
+  margin-bottom: -150px;
+  font-size: 60px;
+  font-family: 'Indie Flower', cursive;
+}
+.fill {
+ font-size: 30px;
+  font-family: 'Cookie', cursive;
+  font-weight: lighter;
+}
+body {
+  background: url('https://cdn.pixabay.com/photo/2018/11/29/22/53/santa-3846724_1280.jpg');
+  background-size: cover;
+}
+.letterHeader {
+  text-align: center;
+  font-size: 75px;
+  font-family: 'Cookie', cursive;
+  margin: 35px 0 0 0;
+  transition: height .5s;
+  -webkit-transition: height .5s;
+  -moz-transition: height .5s;
+}
+small {
+  transition: height 1s;
+  -webkit-transition: height 1s;
+  -moz-transition: height 1s;
+  text-align: center;
+  font-size: 30px;
+  font-family: 'Cookie', cursive;
+  font-weight: lighter;
+}
+.intro {
+  text-align: center;
+  margin: 200px 400px 0 400px;
+  font-family: 'Indie Flower', cursive;
+  font-size: 35px;
+  z-index: 1;
+}
+.content {
+  position: sticky;
+}
+#startBtn {
+  background: transparent;
+  border-radius: 100%;
+  border: 2.5px solid black;
+  display: block;
+  padding: 25px;
+  margin: 20px 0 0 750px;
+  font-family: 'Indie Flower', cursive;
+  font-weight: bold;
+  font-size: 35px;
+  z-index: 1;
+}
+  #startBtn:hover + .pressMe {
+  display: block;
+    transition: height .5s;
+  -webkit-transition: height .5s;
+  -moz-transition: height .5s;
+   z-index: 1;
+}
+.jingle {
+  margin: 0 200px -100px 1050px;
+  font-family: 'Indie Flower', cursive;
+  font-weight: bold;
+  font-size: 35px;
+  z-index: 1;
+}
